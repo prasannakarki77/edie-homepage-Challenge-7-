@@ -1,95 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="container">
+      <div class="header-section">
+        <div class="top-head">
+          <h2 id="logo">Edie</h2>
+          <div class="hamburger-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="nav-bar">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Our Works</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="hero-section">
+        <div class="hero-text-div1">
+          <span>Unhappy with your website?</span>
+          <span>We create beautiful and fast web services</span>
+        </div>
+        <div class="img-div img0">
+          <img src="../images/heroImage.jpg" alt="" />
+        </div>
+        <div class="hero-text-div2">
+          <span> Story, emotion and purpose </span>
+          <span>
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </span>
+          <span> Want us to contact you? </span>
+          <span>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <button type="submit">Join</button>
+          </span>
+        </div>
+      </div>
+      <div class="services-section">
+        <div class="service-text-div">
+          <span>We offer high demand services </span>
+        </div>
+        <div class="service-cards">
+          <div class="card">
+            <span class="icon blue"><i class="fas fa-pencil-alt"></i></span>
+            <span>UI/UX Design</span>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</span
+            >
+            <span>
+              <button>Get started</button>
+            </span>
+          </div>
+          <div class="card">
+            <span class="icon green"><i class="fas fa-code"></i></span>
+            <span>UI/UX Design</span>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</span
+            >
+            <span>
+              <button>Get started</button>
+            </span>
+          </div>
+          <div class="card">
+            <span class="icon red"><i class="fas fa-server"></i></span>
+            <span>UI/UX Design</span>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.</span
+            >
+            <span>
+              <button>Get started</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="projects-section">
+        <div class="project-text-div">
+          <span>Good design means good business </span>
+        </div>
+        <div class="project-showcase">
+          <div class="project project1">
+            <div class="project-image">
+              <img src="images/smarthome.jpg" alt="" />
+            </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+            <span>Full stack application</span>
+            <span>Smart home dashboard</span>
+          </div>
+          <div class="project project2">
+            <div class="project-image">
+              <img src="images/onboard.png" alt="" />
+            </div>
+
+            <span>UX/UI design</span>
+            <span>Onboard application</span>
+          </div>
+          <div class="project project3">
+            <div class="project-image">
+              <img src="images/booking.png" alt="" />
+            </div>
+
+            <span>Mobile application</span>
+            <span>Booking system</span>
+          </div>
+          <div class="project project4">
+            <div class="project-image">
+              <img src="images/juice-product.png" alt="" />
+            </div>
+
+            <span>Front End application</span>
+            <span>Juice product homepage</span>
+          </div>
+        </div>
+        <span class="see-more"><a href="#">See More →</a></span>
+      </div>
+      <div class="team-section">
+        <div class="team-text-div">
+          <span>Meet the team</span>
+          <span>We are chilled and a laidback team</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+        <div class="team-image">
+          <div class="img1 image">
+            <img src="images/person3.png" alt="" />
+          </div>
+          <div class="img2 image">
+            <img class="img-2" src=" images/person1.png" alt="" />
+            <img class="img3" src="images/person2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-section">
+        <div class="testimonial-text-div">
+          <span>
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </span>
+        </div>
+        <div class="customer">
+          <div class="customer-image">
+            <img src="images/person4.png" alt="" />
+          </div>
+          <div class="customer-text">
+            <span>Carlos Tran</span>
+            <span>The Decorate Gatsby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="footer-elements">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Our Works</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-edie">
+          <span>Edie</span>
+          <span class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+          </span>
+        </div>
+        <div class="contact-email">
+          <span> Want us to contact you? </span>
+          <span>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <button type="submit">Join</button>
+          </span>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
