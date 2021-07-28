@@ -477,6 +477,9 @@ button {
 .footer-elements{
   display: flex;
   justify-content: space-between;
+  max-width: 1300px;
+  margin: $margin-divs auto;
+
 }
 .footer-nav{
   ul {
@@ -490,6 +493,21 @@ button {
     }
   }
 }
+.footer-edie{
+  min-width: 100px;
+  span{
+    &:nth-child(1){
+      font-size: $font-lg;
+      font-weight: 600;
+    }
+  }
+  .socials{
+    i{
+      transform: scale(1.5);
+      margin-right: 10px;
+    }
+  }
+}
 .contact-email {
   max-width: 366px;
   span {
@@ -500,12 +518,13 @@ button {
       position: relative;
 
       input {
-        width: 350px;
+        width: 320px;
         height: 57px;
         border-radius: 10px;
 
         background-color: #f2f2f2;
-        padding: 20px;
+        padding:0 100px 0 20px;
+
         &::placeholder {
           color: #bdbdbd;
         }
@@ -513,7 +532,7 @@ button {
       button {
         position: absolute;
         top: 5px;
-        right: 20px;
+        right: 5px;
         color: #f2f2f2;
         background: #2d9cdb;
         width: 94px;
@@ -522,4 +541,8 @@ button {
       }
     }
   }
+}
+.creator{
+  text-align: center;
+  margin-top: $margin-sections;
 }
