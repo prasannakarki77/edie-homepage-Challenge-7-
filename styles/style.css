@@ -15,6 +15,7 @@ li {
 
 .container {
   padding: 40px;
+  min-width: 380px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -211,13 +212,13 @@ span {
   font-size: 48px;
 }
 
-.img1 {
+.img0 {
   max-width: 100%;
   height: 354px;
   margin-bottom: 40px;
 }
 
-.img1 img {
+.img0 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -501,7 +502,7 @@ button {
 .team-image {
   display: -ms-grid;
   display: grid;
-  height: 584px;
+  max-width: 632px;
   grid-gap: 20px;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
@@ -512,8 +513,13 @@ button {
   border-radius: 24px;
 }
 
+.img1 {
+  max-width: 320px;
+}
+
 .img1 img {
   margin: 30% auto;
+  width: 100%;
 }
 
 .img2 {
@@ -524,11 +530,11 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 260px;
 }
 
-.img2 .img-2 {
-  width: 260px;
-  height: 260px;
+.img2 img {
+  width: 100%;
 }
 
 .img2 .img3 {
@@ -578,6 +584,7 @@ button {
   background: black;
   color: white;
   padding: 40px;
+  min-width: 380px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -592,6 +599,10 @@ button {
   margin: 40px auto;
 }
 
+.footer-nav ul {
+  text-align: center;
+}
+
 .footer-nav ul li {
   margin-bottom: 10px;
   font-size: 14px;
@@ -602,7 +613,8 @@ button {
 }
 
 .footer-edie {
-  min-width: 100px;
+  min-width: 200px;
+  text-align: center;
 }
 
 .footer-edie span:nth-child(1) {
@@ -666,5 +678,91 @@ button {
 .creator {
   text-align: center;
   margin-top: 90px;
+}
+
+@media (max-width: 1170px) {
+  .projects-section {
+    height: 100%;
+  }
+  .project-showcase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+  }
+  .project-showcase .project1,
+  .project-showcase .project2,
+  .project-showcase .project3,
+  .project-showcase .project4 {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .service-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service-text-div {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .service-text-div span {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1055px) {
+  .team-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 642px) {
+  .footer-elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-nav,
+  .footer-edie,
+  .contact-email {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+  .hero-text-div2 {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-text-div1 {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
