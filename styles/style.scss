@@ -6,10 +6,12 @@ $font-lg: 36px;
 $font-md: 24px;
 $font-sm: 18px;
 $font-ex-sm: 14px;
+
 $font-style-heebo: "Heebo", sans-serif;
 $font-style-poppins: "Poppins", sans-serif;
 $margin-sections: 90px;
 $margin-divs: 40px;
+
 * {
   margin: 0;
   padding: 0;
@@ -553,13 +555,7 @@ button {
 }
 
 //MEDIA QUERIES
-@media (max-width:500px){
-  $font-ex-lg: 24px;
-  $font-lg: 24px;
-  $font-md: 18px;
-  $font-sm: 16px;
-  $font-ex-sm: 12px;
-}
+
 @media (max-width: 1170px) {
   .projects-section {
     height: 100%;
@@ -591,6 +587,7 @@ button {
     }
   }
 }
+
 @media (max-width: 1055px) {
   .team-section {
     flex-direction: column;
@@ -617,7 +614,6 @@ button {
   .hero-text-div2 {
     margin: 0 auto;
   }
-
 }
 
 @media (max-width: 700px) {
@@ -625,5 +621,3 @@ button {
     margin-left: 0;
   }
 }
-
-
