@@ -12,6 +12,9 @@ $font-style-poppins: "Poppins", sans-serif;
 $margin-sections: 90px;
 $margin-divs: 40px;
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +25,9 @@ li {
   text-decoration: none;
   list-style: none;
   color: #333333;
+  transition: all 0.2s;
 }
+
 .container {
   padding: 40px;
   min-width: 380px;
@@ -221,6 +226,7 @@ span {
         width: 94px;
         height: 49px;
         border-radius: 12px;
+        transition: all 0.2s;
       }
     }
   }
@@ -494,6 +500,7 @@ button {
       font-size: $font-ex-sm;
       a {
         color: white;
+        transition: all 0.2s;
       }
     }
   }
@@ -544,6 +551,7 @@ button {
         width: 94px;
         height: 49px;
         border-radius: 12px;
+        transition: all 0.2s;
       }
     }
   }
@@ -552,10 +560,24 @@ button {
 .creator {
   text-align: center;
   margin-top: $margin-sections;
+  a {
+    color: white;
+  }
 }
-
+a:hover,
+.footer-nav ul li a:hover {
+  color: #2d9cdb;
+}
+.contact-email span:nth-child(2) button:hover,
+.hero-text-div2 span:nth-child(4) button:hover {
+  border: 1px solid #2d9cdb;
+  background: transparent;
+  color: #2d9cdb;
+  cursor: pointer;
+}
 //MEDIA QUERIES
-
+@media (max-width: 500px) {
+}
 @media (max-width: 1170px) {
   .projects-section {
     height: 100%;
@@ -613,6 +635,87 @@ button {
   }
   .hero-text-div2 {
     margin: 0 auto;
+  }
+  $font-ex-lg: 24px;
+  $font-lg: 24px;
+  $font-md: 18px;
+  $font-sm: 16px;
+  $font-ex-sm: 12px;
+  .hero-text-div1 {
+    span {
+      &:nth-child(1) {
+        font-size: $font-sm;
+      }
+      &:nth-child(2) {
+        font-size: $font-ex-lg;
+      }
+    }
+  }
+  .hero-text-div2 {
+    span {
+      &:nth-child(1) {
+        font-size: $font-ex-lg;
+      }
+      &:nth-child(2) {
+        font-size: $font-sm;
+      }
+      &:nth-child(3) {
+        font-size: $font-ex-sm;
+      }
+    }
+  }
+  input,
+  button {
+    font-size: $font-sm;
+  }
+
+  .service-text-div {
+    span {
+      font-size: $font-lg;
+    }
+  }
+  .card {
+    span {
+      &:nth-child(2) {
+        font-size: $font-md;
+      }
+    }
+  }
+  .projects-section {
+    a {
+      font-size: $font-md;
+    }
+  }
+  .project {
+    span {
+      &:nth-child(2) {
+        font-size: $font-ex-sm;
+      }
+      &:nth-child(3) {
+        font-size: $font-md;
+      }
+    }
+  }
+  .project-text-div {
+    span {
+      font-size: $font-lg;
+    }
+  }
+  .team-text-div {
+    span {
+      &:nth-child(1) {
+        font-size: $font-sm;
+      }
+      &:nth-child(2) {
+        font-size: $font-lg;
+      }
+      &:nth-child(3) {
+        font-size: $font-ex-sm;
+      }
+    }
+  }
+  .testimonial-text-div {
+    font-size: $font-lg;
   }
 }
 

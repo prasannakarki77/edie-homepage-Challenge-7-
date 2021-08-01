@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +15,8 @@ li {
   text-decoration: none;
   list-style: none;
   color: #333333;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .container {
@@ -283,6 +289,8 @@ span {
   width: 94px;
   height: 49px;
   border-radius: 12px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 input,
@@ -610,6 +618,8 @@ button {
 
 .footer-nav ul li a {
   color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .footer-edie {
@@ -673,11 +683,30 @@ button {
   width: 94px;
   height: 49px;
   border-radius: 12px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .creator {
   text-align: center;
   margin-top: 90px;
+}
+
+.creator a {
+  color: white;
+}
+
+a:hover,
+.footer-nav ul li a:hover {
+  color: #2d9cdb;
+}
+
+.contact-email span:nth-child(2) button:hover,
+.hero-text-div2 span:nth-child(4) button:hover {
+  border: 1px solid #2d9cdb;
+  background: transparent;
+  color: #2d9cdb;
+  cursor: pointer;
 }
 
 @media (max-width: 1170px) {
@@ -757,6 +786,55 @@ button {
   }
   .hero-text-div2 {
     margin: 0 auto;
+  }
+  .hero-text-div1 span:nth-child(1) {
+    font-size: 16px;
+  }
+  .hero-text-div1 span:nth-child(2) {
+    font-size: 24px;
+  }
+  .hero-text-div2 span:nth-child(1) {
+    font-size: 24px;
+  }
+  .hero-text-div2 span:nth-child(2) {
+    font-size: 16px;
+  }
+  .hero-text-div2 span:nth-child(3) {
+    font-size: 12px;
+  }
+  input,
+  button {
+    font-size: 16px;
+  }
+  .service-text-div span {
+    font-size: 24px;
+  }
+  .card span:nth-child(2) {
+    font-size: 18px;
+  }
+  .projects-section a {
+    font-size: 18px;
+  }
+  .project span:nth-child(2) {
+    font-size: 12px;
+  }
+  .project span:nth-child(3) {
+    font-size: 18px;
+  }
+  .project-text-div span {
+    font-size: 24px;
+  }
+  .team-text-div span:nth-child(1) {
+    font-size: 16px;
+  }
+  .team-text-div span:nth-child(2) {
+    font-size: 24px;
+  }
+  .team-text-div span:nth-child(3) {
+    font-size: 12px;
+  }
+  .testimonial-text-div {
+    font-size: 24px;
   }
 }
 
